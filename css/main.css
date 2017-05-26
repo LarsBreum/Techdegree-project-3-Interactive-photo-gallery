@@ -26,6 +26,7 @@ input[type="search"] {
 	border: 2px solid lightgrey;
 	border-radius: 5px;
 	padding: 10px;
+	width: 200px;
 }
 input[type="search"]:focus {
 	outline: none;
@@ -36,14 +37,27 @@ input[type="search"]:focus {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	max-width: 1024px;
+	margin: 0 auto;
+
 }
 .img-container {
-	flex-grow: 1;
-	flex-basis: 100%;
+	/*flex-basis: 100%*/;
 	text-align: center;
-	margin: 15px 0 15px 0;
+	margin: 10px;
+	height: 200px;
+
 }
 .img-container img {
 	max-width: 100%;
 
+}
+
+@media screen and (min-width: 440px) {
+	.img-container {
+		/*flex-basis: 50%;*/
+	}
+	input[type="search"] {
+		width: 420px;
+	}
 }
