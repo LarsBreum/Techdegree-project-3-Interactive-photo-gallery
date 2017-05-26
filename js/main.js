@@ -6,3 +6,5 @@ lightbox.option({
 	'fadeDuration': 200
 
 });
+
+//Search the images
