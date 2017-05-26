@@ -1,3 +1,6 @@
+/***** FONT *****/
+@import url('https://fonts.googleapis.com/css?family=Khula:400,700');
+
 /***** GLOBAL STYLES *****/
 
 * {
@@ -6,6 +9,7 @@
 
 body {
 	margin: 0;
+	font-family: 'Khula', sans-serif;
 }
 
 header, footer {
@@ -44,7 +48,7 @@ input[type="search"]:focus {
 .img-container {
 	/*flex-basis: 100%*/;
 	text-align: center;
-	margin: 10px;
+	margin: 20px;
 	height: 200px;
 
 }
@@ -54,9 +58,6 @@ input[type="search"]:focus {
 }
 
 @media screen and (min-width: 440px) {
-	.img-container {
-		/*flex-basis: 50%;*/
-	}
 	input[type="search"] {
 		width: 420px;
 	}
