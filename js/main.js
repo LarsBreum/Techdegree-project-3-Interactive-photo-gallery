@@ -1,5 +1,4 @@
 //Customizing lightbox
-
 lightbox.option({
 	'resizeDuration': 100,
 	'wrapAround': true,
@@ -9,18 +8,26 @@ lightbox.option({
 
 function searchFunction() {
 	//declare vars
-	var input, divs, filter, dataTitle;
+	var input, filter;
 	input = $('input[type=search]');
+	//get the anchor element as array of objects
+	var allAnchors = $('a[data-lightbox=gallery');
+	//Get number of a tags on page
+	var numOfAnchors = allAnchors.length;
 	//case insensitivity
 	filter = input.val().toLowerCase();
-	//Get the data-title values
-	var dataTitleVal = $('a[data-title]').attr("data-title").toLowerCase();
-	console.log(dataTitleVal);
-	//output the field value
-	console.log(filter);
-
-	/*loop through all a's to see if filter is included in dataTitleVal
-	display: none, if it is not */
 
 
+	//Loop through all 12 images
+	for (var i = 0; i < numOfAnchors; i++ ) {
+		//get attribute data-title
+		var dataTitleVal = 
+		document.getElementsByTagName('a')[i].getAttribute("data-title").toLowerCase();
+		//if filter is not a substr of dataTitleVal hide the anchor
+		if (dataTitleVal.indexOf(filter) == -1) {
+			allAnchors[i].css('display', 'none');
+		} else {
+			allAnchors[i].css('display', 'initial');
+		}
+	}
 }
