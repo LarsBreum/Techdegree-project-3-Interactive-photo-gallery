@@ -15,7 +15,7 @@ function searchFunction() {
 	filter = input.val().toLowerCase();
 	//Get the data-title values
 	var dataTitleVal = $('a[data-title]').attr("data-title").toLowerCase();
-	console.log(dataTitleVal[1]);
+	console.log(dataTitleVal);
 	//output the field value
 	console.log(filter);
 
