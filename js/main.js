@@ -2,14 +2,14 @@
 function searchFunction() {
 	//declare vars
 	var input, filter;
+	//get the input field as $object
 	input = $('input[type=search]');
-	//get the anchor element as array of objects
+	//get the anchor elements as array of objects
 	var allAnchors = $('a[data-lightbox=gallery');
 	//Get number of a tags on page
 	var numOfAnchors = allAnchors.length;
 	//case insensitivity by setting the filter to lowercase
 	filter = input.val().toLowerCase();
-
 
 	//Loop through all 12 images
 	for (var i = 0; i < numOfAnchors; i++ ) {
