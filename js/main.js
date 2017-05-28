@@ -26,10 +26,10 @@ function searchFunction() {
 		document.getElementsByTagName('a')[i].getAttribute("data-title").toLowerCase();
 		//if filter is not a substr of dataTitleVal hide the anchor
 		if (dataTitleVal.indexOf(filter) == -1) {
-			$(allAnchors[i]).hide('500');
+			$(allAnchors[i]).hide('1000');
 		//if it is, show the anchor
 		} else {
-			$(allAnchors[i]).show('500');
+			$(allAnchors[i]).show('1000');
 		}
 	}
 }
