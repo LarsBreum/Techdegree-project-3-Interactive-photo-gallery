@@ -1,3 +1,4 @@
+// this runs everytime a keyUp event happens in the input field
 function searchFunction() {
 	//declare vars
 	var input, filter;
