@@ -12,7 +12,7 @@ const searchFunction = () => {
 	filter = input.val().toLowerCase();
 
 	//Loop through all 12 images
-	for (var i = 0; i < numOfAnchors; i++ ) {
+	for (let i = 0; i < numOfAnchors; i++ ) {
 		/*get attribute data-title (to search by the caption) and setting the
 		caption to lower case*/
 		const dataTitleVal = 
